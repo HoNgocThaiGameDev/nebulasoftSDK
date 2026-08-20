@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8007538126435118531
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057b80d0e44fcd743a64124e7ab0e849, type: 3}
+  m_Name: NebulaSoft.DevPanelInitModule
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 93de954e78645ad44bda03e03e3b7c09, type: 2}
+--- !u!114 &-7403710447238251676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcead370ec905342a0e18be0c195138, type: 3}
+  m_Name: NebulaSoft.GameInitModule
+  m_EditorClassIdentifier: 
+  gameData: {fileID: 11400000, guid: 4ea96bbf1eab4494d82bff22a36b7429, type: 2}
+--- !u!114 &-4942777565868066768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea328ba120396e45a8f7015022898c8, type: 3}
+  m_Name: NebulaSoft.ScreenSettings
+  m_EditorClassIdentifier: 
+  setFrameRateAutomatically: 1
+  defaultFrameRate: 60
+  batterySaveFrameRate: 30
+  sleepTimeout: -1
+--- !u!114 &-681380019574015404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739328186e8220e4dbd35270e195d7cf, type: 3}
+  m_Name: NebulaSoft.HapticInitModule
+  m_EditorClassIdentifier: 
+  verboseLogging: 0
+--- !u!114 &-319585252694912297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b3d0ca46dc2e44f9c0d71b581aabeb, type: 3}
+  m_Name: NebulaSoft.DailyRewardInitModule
+  m_EditorClassIdentifier: Assembly-CSharp::NebulaSoft.DailyRewardInitModule
+  database: {fileID: 11400000, guid: f1bf911a102df144eb693b6fd4cf453e, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a0258cb7d17964493174ceaf8d2867, type: 3}
+  m_Name: Project Init Settings
+  m_EditorClassIdentifier: 
+  modules:
+  - {fileID: 150167048453217202}
+  - {fileID: 6377013955087300433}
+  - {fileID: 2650117374181925186}
+  - {fileID: 1166592688446620423}
+  - {fileID: -681380019574015404}
+  - {fileID: -8007538126435118531}
+  - {fileID: -7403710447238251676}
+  - {fileID: 9145584784677371558}
+  - {fileID: -4942777565868066768}
+  - {fileID: 5225613000792799278}
+  - {fileID: -319585252694912297}
+--- !u!114 &150167048453217202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e5e1099f825a04db642913c56517c0, type: 3}
+  m_Name: NebulaSoft.SaveInitModule
+  m_EditorClassIdentifier: 
+  autoSaveDelay: 0
+  cleanSaveStart: 0
+  webGLPrefix: build_20260223_173146
+--- !u!114 &1166592688446620423
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0aa45fdd84b03b439feb2c1c4d61b3a, type: 3}
+  m_Name: NebulaSoft.CurrencyInitModule
+  m_EditorClassIdentifier: 
+  currenciesDatabase: {fileID: 11400000, guid: f87cad86488371b479fdbde4e0b934c4, type: 2}
+--- !u!114 &2650117374181925186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27433fc73d0e094491cb89c195d0cf8, type: 3}
+  m_Name: NebulaSoft.AudioInitModule
+  m_EditorClassIdentifier: 
+  audioSettings: {fileID: 11400000, guid: 95cb55ceeec71f2479101a4fb5122151, type: 2}
+  audioSourcesPoolSize: 4
+  maxDistance: 30
+  spread: 180
+  rolloffCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5225613000792799278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0f2caf33128664ea9918c262397537, type: 3}
+  m_Name: NebulaSoft.QuestInitModule
+  m_EditorClassIdentifier: Assembly-CSharp::NebulaSoft.QuestInitModule
+  questDatabase: {fileID: 11400000, guid: 700d262f48f3fd24590c528cb82de7d2, type: 2}
+--- !u!114 &6377013955087300433
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6502da7177729af4fbe4808c93025ab3, type: 3}
+  m_Name: NebulaSoft.TweenInitModule
+  m_EditorClassIdentifier: 
+  customEasingFunctions: []
+  tweensUpdateCount: 300
+  tweensFixedUpdateCount: 30
+  tweensLateUpdateCount: 0
+  verboseLogging: 0
+--- !u!114 &8686307833972740282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98d81a701353494b9fcbff0fcc76423, type: 3}
+  m_Name: NebulaSoft.AnalyticsHelperInitModule
+  m_EditorClassIdentifier: 
+--- !u!114 &9145584784677371558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c0738cf6240dba4987ffd9fab3821b8, type: 3}
+  m_Name: NebulaSoft.LivesSystemInitModule
+  m_EditorClassIdentifier: 
+  livesData: {fileID: 11400000, guid: 4961f3f8ed8546848a7cadf281ec9d84, type: 2}

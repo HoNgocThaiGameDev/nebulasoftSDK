@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b796d4f76ccb5488f711694f61a821, type: 3}
+  m_Name: Monetization Settings
+  m_EditorClassIdentifier: 
+  iapSettings: {fileID: 1569315140361065267}
+  adsSettings: {fileID: 1338303973460554233}
+  isModuleActive: 1
+  verboseLogging: 0
+  debugMode: 0
+  testDevices:
+  - 91687A6357C9E0169C1471C98D0237EB
+  privacyLink: https://hongocthaigamedev.github.io/cute-animal-slide-rescue-privacy-policy/
+  termsOfUseLink: 
+--- !u!114 &1338303973460554233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ddb41bf72d53a48a6bdc593d706f94, type: 3}
+  m_Name: Ads Settings
+  m_EditorClassIdentifier: 
+  bannerType: 1
+  interstitialType: 0
+  rewardedVideoType: 0
+  loadAdsOnStart: 1
+  noAdsRewardSprite: {fileID: 21300000, guid: e9da7f14e336254428efd41f37278ab9, type: 3}
+  interstitialFirstStartDelay: 40
+  interstitialStartDelay: 40
+  interstitialShowingDelay: 30
+  loadingAdDuration: 0
+  loadingMessage: Ad is loading..
+  adMobContainer:
+    androidAppId: ca-app-pub-3940256099942544~3347511713
+    iosAppId: ca-app-pub-3940256099942544~3347511713
+    androidBannerID: ca-app-pub-3940256099942544/6300978111
+    iOSBannerID: ca-app-pub-3940256099942544/2934735716
+    androidInterstitialID: ca-app-pub-3940256099942544/1033173712
+    iOSInterstitialID: ca-app-pub-3940256099942544/4411468910
+    androidRewardedVideoID: ca-app-pub-3940256099942544/5224354917
+    iOSRewardedVideoID: ca-app-pub-3940256099942544/1712485313
+    useAppOpenAd: 0
+    androidAppOpenAdID: ca-app-pub-3940256099942544/9257395921
+    iOSAppOpenAdID: ca-app-pub-3940256099942544/5575463023
+    appOpenAdExpirationHoursTime: 4
+    bannerType: 0
+    bannerPosition: 0
+  unityAdsContainer:
+    androidAppID: 5717128
+    iOSAppID: 5717129
+    androidBannerID: Banner_Android
+    iOSBannerID: Banner_iOS
+    androidInterstitialID: Interstitial_Android
+    iOSInterstitialID: Interstitial_iOS
+    androidRewardedVideoID: Rewarded_Android
+    iOSRewardedVideoID: Rewarded_iOS
+    bannerPosition: 4
+  levelPlayContainer:
+    androidAppKey: 85460dcd
+    iOSAppKey: 8545d445
+    androidBannerID: thnfvcsog13bhn08
+    iOSBannerID: iep3rxsyp9na3rw8
+    androidInterstitialID: aeyqi3vqlv6o8sh9
+    iOSInterstitialID: wmgt0712uuux8ju4
+    bannerPosition: 0
+    bannerType: 0
+  dummyContainer:
+    bannerPosition: 0
+  applovinContainer:
+    androidBannerID: de1db5fe073b0be1
+    iOSBannerID: d4f0699a03565083
+    androidInterstitialID: 4db97f20293fe623
+    iOSInterstitialID: e7e7e78748531484
+    androidRewardedVideoID: 65c8ddae6223e186
+    iOSRewardedVideoID: 0995a05e7412bf91
+    bannerPosition: 7
+    useAdaptiveBanner: 0
+--- !u!114 &1569315140361065267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f28faf74e3de2b4bb5f8724582e5ceb, type: 3}
+  m_Name: IAP Settings
+  m_EditorClassIdentifier: 
+  useFakeStore: 0
+  fakeStoreMode: 0
+  storeItems:
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.no_ads
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.no_ads
+    productKeyType: 0
+    productType: 1
+    defaultUSDPrice: 5.99
+    rewardsSet: {fileID: 11400000, guid: 826371c02dd12994284ab8257ca81e40, type: 2}
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.starter_pack
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.starter_pack
+    productKeyType: 1
+    productType: 1
+    defaultUSDPrice: 11.99
+    rewardsSet: {fileID: 11400000, guid: 4b91f3d8740d818469345ceb6708cf33, type: 2}
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.coins_150
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.coins_150
+    productKeyType: 2
+    productType: 0
+    defaultUSDPrice: 0.99
+    rewardsSet: {fileID: 11400000, guid: 5f9ad4d9f5b58fd4683568f8544852ed, type: 2}
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.coins_450
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.coins_450
+    productKeyType: 3
+    productType: 0
+    defaultUSDPrice: 2.49
+    rewardsSet: {fileID: 11400000, guid: 594ea6a3c4257c046ab50764ebada307, type: 2}
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.coins_1000
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.coins_1000
+    productKeyType: 4
+    productType: 0
+    defaultUSDPrice: 4.99
+    rewardsSet: {fileID: 11400000, guid: 3ffa6b32851a8614ebda6128d7f71bb4, type: 2}
+  - androidID: com.nebulasoftstudio.cuteanimalsliderescue.powerup_pack
+    iOSID: com.nebulasoftstudio.cuteanimalsliderescue.powerup_pack
+    productKeyType: 5
+    productType: 0
+    defaultUSDPrice: 8.99
+    rewardsSet: {fileID: 11400000, guid: 19e24ec04eb07094c941b4cec6621029, type: 2}

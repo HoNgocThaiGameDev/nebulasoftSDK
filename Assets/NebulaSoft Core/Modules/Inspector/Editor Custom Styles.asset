@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c943daf6bd4c6c4468529f197a0e7cd1, type: 3}
+  m_Name: Editor Custom Styles
+  m_EditorClassIdentifier: 
+  defaultGUISkin: {fileID: 11400000, guid: 0d392f0bb1dfefc468ce526540dec8dc, type: 2}
+  proGUISkin: {fileID: 11400000, guid: 7cb41da2d0df60a4aa915ae804bf7786, type: 2}
+  icons:
+  - {fileID: 2800000, guid: 8363201474f6388468eaf25c770f4cb8, type: 3}
+  - {fileID: 2800000, guid: f8d98778b514f294781c7e7628fd2aa4, type: 3}
+  - {fileID: 2800000, guid: 2fecb5232430ec449b293b9f0d6c6175, type: 3}
+  - {fileID: 2800000, guid: 5ea261519f2829349bc81d6f65d6a6e6, type: 3}
+  - {fileID: 2800000, guid: d881ef85eecae16438f779ed45c852ac, type: 3}
+  - {fileID: 2800000, guid: b2c73fbb90a30a945a8d69b6d8052c95, type: 3}
+  - {fileID: 2800000, guid: 599cef15f00f8d744a37c457072de630, type: 3}
+  - {fileID: 2800000, guid: 507a9ba3b3bb2cc4ba3aa4fb6737b375, type: 3}
+  - {fileID: 2800000, guid: 8923ca2ff22633746a3399ed84e5a12c, type: 3}
+  - {fileID: 2800000, guid: cad0200cbab4c4541a1c924c806cb41c, type: 3}
+  - {fileID: 2800000, guid: 2b5721fe2acfe9b4695b9268743a9281, type: 3}
+  - {fileID: 2800000, guid: e2890998f2c180948883e4597306cbb1, type: 3}
+  - {fileID: 2800000, guid: 29ea3de3c437436459d2a0dd7f36f3df, type: 3}
+  - {fileID: 2800000, guid: 3dc94f25c90d6834eb7acb344a785a35, type: 3}
+  - {fileID: 2800000, guid: 04094338cfac3d74eabb1d49063b90cb, type: 3}
+  - {fileID: 2800000, guid: cffdebb0a6a756146a5e5a3162bdfc39, type: 3}
+  - {fileID: 2800000, guid: 212aae13e2e3b9843a227b3412c51c4f, type: 3}
+  - {fileID: 2800000, guid: 1a6540ccf2d6b04479038830cd88526c, type: 3}
+  - {fileID: 2800000, guid: 72b342b4ad7b13543b5555701f053756, type: 3}
+  - {fileID: 2800000, guid: 51072900b4ead6041b2295daa261f1fb, type: 3}
+  - {fileID: 2800000, guid: f488948a425a3924a9932ec8023f12d0, type: 3}
+  - {fileID: 2800000, guid: c1235c38616e44647ad3d0e662ba68cb, type: 3}
+  - {fileID: 2800000, guid: 23f4238ac5f93ec4d949073165816e09, type: 3}
+  - {fileID: 2800000, guid: f1909410a39159d4aa23de49e7b78550, type: 3}
+  - {fileID: 2800000, guid: b0eb97d8dea120d44804921caae9f8b6, type: 3}
+  - {fileID: 2800000, guid: 2fc307e0c6f30ef4bbbec6a0e26f6705, type: 3}
+  - {fileID: 2800000, guid: b05e08665255a27438e741d52fbc2d7d, type: 3}
+  - {fileID: 2800000, guid: 138621b50a17f8d4eaf482937b337ebd, type: 3}
+  - {fileID: 2800000, guid: a28c52b3fbcd7754987610a1c00d64e3, type: 3}
+  - {fileID: 2800000, guid: 11a09880ec076db4e9db0063abf03d08, type: 3}
+  - {fileID: 2800000, guid: afb7e484bebb2024db19d936e29f8faa, type: 3}
+  - {fileID: 2800000, guid: a693769146da19040b20dce6c9dab444, type: 3}
+  - {fileID: 2800000, guid: f2c878eec75cfc24e8e41c1bf407ff9c, type: 3}
+  - {fileID: 2800000, guid: 0876d903d07f8414e86d0c05920cc67b, type: 3}
+  missingIcon: {fileID: 2800000, guid: 138621b50a17f8d4eaf482937b337ebd, type: 3}
+  hierarchyIcons:
+  - name: Scripts Holder
+    texture: {fileID: 2800000, guid: 17b65043bdc1fcf4b822d16aa36072af, type: 3}
+  - name: Camera
+    texture: {fileID: 2800000, guid: e2392c6e30ccf104e809722acf448e6d, type: 3}
+  - name: Main Camera
+    texture: {fileID: 2800000, guid: e2392c6e30ccf104e809722acf448e6d, type: 3}
+  - name: Light
+    texture: {fileID: 2800000, guid: 11f1946be9e48fb4caac165ee048dc8d, type: 3}
+  - name: Directional Light
+    texture: {fileID: 2800000, guid: 9f2a274442663f949b8bef5726127cab, type: 3}
+  - name: UI Main Canvas
+    texture: {fileID: 2800000, guid: 3ed0206723b2a1f45862a5c3bc392720, type: 3}
+  - name: UI Canvas
+    texture: {fileID: 2800000, guid: 3ed0206723b2a1f45862a5c3bc392720, type: 3}
+  - name: Canvas
+    texture: {fileID: 2800000, guid: 3ed0206723b2a1f45862a5c3bc392720, type: 3}
+  - name: Music
+    texture: {fileID: 2800000, guid: 4a2b48b7dc7604047b3ec59dba7fd0ff, type: 3}

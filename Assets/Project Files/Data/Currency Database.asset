@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b758152229a502245884353dd18ab76a, type: 3}
+  m_Name: Currency Database
+  m_EditorClassIdentifier: 
+  currencies:
+  - currencyType: 0
+    defaultAmount: 0
+    icon: {fileID: 21300000, guid: 66be956892120a84bbda15b783d05267, type: 3}
+    data:
+      displayAlways: 0
+    floatingCloud:
+      addToCloud: 0
+      radius: 200
+      specialPrefab: {fileID: 0}
+      appearAudioClip: {fileID: 8300000, guid: b44b8def918fadc4ab6fc63381d4f29f, type: 3}
+      collectAudioClip: {fileID: 8300000, guid: 0fdebe97dfabb004cbf8a67b9ce993df,
+        type: 3}
+    previewSettings: {fileID: 11400000, guid: fc88f09e053711146b2ffdf07d3ce760, type: 2}

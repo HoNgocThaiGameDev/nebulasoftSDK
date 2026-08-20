@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8634c5cf5896bb84ca6474552cf85648, type: 3}
+  m_Name: Audio Clips
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: bdf4c1b8698a9cc49a726c2416dcc97f, type: 3}
+  click_fail: {fileID: 8300000, guid: 0b0e39653ec4fa642aa106a0bf90956e, type: 3}
+  blockPick: {fileID: 8300000, guid: 5e490557653c13a45aa857d546ef2654, type: 3}
+  blockPut: {fileID: 8300000, guid: f7761c8473d33d7408b71ecdaaafa063, type: 3}
+  imageComplete: {fileID: 8300000, guid: e6e59a658e8adbd4d90ba01af391c9f9, type: 3}
+  win: {fileID: 8300000, guid: 96f0e9f75f3ed234499682c19af664eb, type: 3}
+  lose: {fileID: 8300000, guid: 56ebeec80cf6b9d4496a6600a3393543, type: 3}
+  revive: {fileID: 8300000, guid: becad5c5bf976414398c0aaf76040e35, type: 3}
+  actionDone: {fileID: 8300000, guid: bcc2c83cac620314d99e42369fe49e31, type: 3}
+  brightest_star: {fileID: 8300000, guid: 810fb2735b4b1484a9928e501b2f6e21, type: 3}

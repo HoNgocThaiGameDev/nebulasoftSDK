@@ -1,0 +1,735 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738a23eecb45d6649a7b4b931bbe4b58, type: 3}
+  m_Name: Quest Database
+  m_EditorClassIdentifier: Assembly-CSharp::NebulaSoft.QuestDatabase
+  definitions:
+  - id: daily_complete_levels
+    category: 0
+    goalType: 0
+    title: Complete 3 level(s)
+    targetValue: 3
+    sortOrder: 0
+    rotationSlot: 0
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 75
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_complete_levels_alt
+    category: 0
+    goalType: 0
+    title: Complete 4 level(s)
+    targetValue: 4
+    sortOrder: 0
+    rotationSlot: 0
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 100
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_spend_coins
+    category: 0
+    goalType: 1
+    title: Spend 250 coins
+    targetValue: 250
+    sortOrder: 1
+    rotationSlot: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 65
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_spend_coins_alt
+    category: 0
+    goalType: 1
+    title: Spend 350 coins
+    targetValue: 350
+    sortOrder: 1
+    rotationSlot: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 85
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_use_powerups
+    category: 0
+    goalType: 2
+    title: Use 2 power-up(s)
+    targetValue: 2
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 1
+      currencyType: 0
+      powerUpType: 0
+      amount: 1
+    milestonePoints: 35
+    goTarget: 3
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_buy_powerup
+    category: 0
+    goalType: 3
+    title: Buy 1 power-up
+    targetValue: 1
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 1
+      currencyType: 0
+      powerUpType: 2
+      amount: 1
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_complete_levels_bonus
+    category: 0
+    goalType: 0
+    title: Complete 2 bonus level(s)
+    targetValue: 2
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 55
+    milestonePoints: 35
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_online_10_minutes
+    category: 0
+    goalType: 4
+    title: Stay online for 10 minute(s)
+    targetValue: 10
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 60
+    milestonePoints: 35
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_online_20_minutes
+    category: 0
+    goalType: 4
+    title: Stay online for 20 minute(s)
+    targetValue: 20
+    sortOrder: 3
+    rotationSlot: 3
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 70
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_watch_rewarded_ad_once
+    category: 0
+    goalType: 5
+    title: Watch 1 rewarded ad
+    targetValue: 1
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 40
+    milestonePoints: 25
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_watch_rewarded_ads_twice
+    category: 0
+    goalType: 5
+    title: Watch 2 rewarded ad(s)
+    targetValue: 2
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 90
+    milestonePoints: 30
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_watch_rewarded_ads_three
+    category: 0
+    goalType: 5
+    title: Watch 3 rewarded ad(s)
+    targetValue: 3
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 140
+    milestonePoints: 35
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_spend_coins_light
+    category: 0
+    goalType: 1
+    title: Spend 100 coins
+    targetValue: 100
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 2
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 35
+    milestonePoints: 25
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_online_5_minutes
+    category: 0
+    goalType: 4
+    title: Stay online for 5 minute(s)
+    targetValue: 5
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 2
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 40
+    milestonePoints: 25
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: daily_watch_ad_bonus_chest
+    category: 0
+    goalType: 5
+    title: Open a bonus coin chest by watching an ad
+    targetValue: 1
+    sortOrder: 5
+    rotationSlot: 5
+    selectionWeight: 10
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 60
+    milestonePoints: 30
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_complete_levels
+    category: 1
+    goalType: 0
+    title: Complete 15 level(s)
+    targetValue: 15
+    sortOrder: 0
+    rotationSlot: 0
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 250
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_complete_levels_alt
+    category: 1
+    goalType: 0
+    title: Complete 20 level(s)
+    targetValue: 20
+    sortOrder: 0
+    rotationSlot: 0
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 325
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_spend_coins
+    category: 1
+    goalType: 1
+    title: Spend 1200 coins
+    targetValue: 1200
+    sortOrder: 1
+    rotationSlot: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 225
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_spend_coins_alt
+    category: 1
+    goalType: 1
+    title: Spend 1500 coins
+    targetValue: 1500
+    sortOrder: 1
+    rotationSlot: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 300
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_buy_powerups
+    category: 1
+    goalType: 3
+    title: Buy 2 power-up(s)
+    targetValue: 2
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 1
+      currencyType: 0
+      powerUpType: 3
+      amount: 10
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_use_powerups
+    category: 1
+    goalType: 2
+    title: Use 6 power-up(s)
+    targetValue: 6
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 1
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 1
+      currencyType: 0
+      powerUpType: 3
+      amount: 10
+    milestonePoints: 35
+    goTarget: 3
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_complete_levels_bonus
+    category: 1
+    goalType: 0
+    title: Complete 10 bonus level(s)
+    targetValue: 10
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 180
+    milestonePoints: 35
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_spend_coins_bonus
+    category: 1
+    goalType: 1
+    title: Spend 800 coins
+    targetValue: 800
+    sortOrder: 2
+    rotationSlot: 2
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 190
+    milestonePoints: 35
+    goTarget: 2
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_online_20_minutes
+    category: 1
+    goalType: 4
+    title: Stay online for 20 minute(s)
+    targetValue: 20
+    sortOrder: 3
+    rotationSlot: 3
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 180
+    milestonePoints: 30
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_watch_rewarded_ads_three
+    category: 1
+    goalType: 5
+    title: Watch 3 rewarded ad(s)
+    targetValue: 3
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 150
+    milestonePoints: 25
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_watch_rewarded_ads_five
+    category: 1
+    goalType: 5
+    title: Watch 5 rewarded ad(s)
+    targetValue: 5
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 260
+    milestonePoints: 30
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_watch_rewarded_ads_seven
+    category: 1
+    goalType: 5
+    title: Watch 7 rewarded ad(s)
+    targetValue: 7
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 4
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 400
+    milestonePoints: 35
+    goTarget: 0
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_complete_levels_extra
+    category: 1
+    goalType: 0
+    title: Complete 8 extra level(s)
+    targetValue: 8
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 2
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 150
+    milestonePoints: 25
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  - id: weekly_online_10_minutes
+    category: 1
+    goalType: 4
+    title: Stay online for 10 minute(s)
+    targetValue: 10
+    sortOrder: 4
+    rotationSlot: 4
+    selectionWeight: 2
+    enabled: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 130
+    milestonePoints: 25
+    goTarget: 1
+    eventActive: 0
+    eventPeriodKey: 
+  milestones:
+  - id: daily_milestone_20
+    category: 0
+    requiredPoints: 20
+    sortOrder: 0
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 10
+  - id: daily_milestone_40
+    category: 0
+    requiredPoints: 40
+    sortOrder: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 20
+  - id: daily_milestone_60
+    category: 0
+    requiredPoints: 60
+    sortOrder: 2
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 30
+  - id: daily_milestone_80
+    category: 0
+    requiredPoints: 80
+    sortOrder: 3
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 40
+  - id: daily_milestone_100
+    category: 0
+    requiredPoints: 100
+    sortOrder: 4
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 50
+  - id: weekly_milestone_20
+    category: 1
+    requiredPoints: 20
+    sortOrder: 0
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 20
+  - id: weekly_milestone_40
+    category: 1
+    requiredPoints: 40
+    sortOrder: 1
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 40
+  - id: weekly_milestone_60
+    category: 1
+    requiredPoints: 60
+    sortOrder: 2
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 60
+  - id: weekly_milestone_80
+    category: 1
+    requiredPoints: 80
+    sortOrder: 3
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 0
+      currencyType: 0
+      powerUpType: 0
+      amount: 80
+  - id: weekly_milestone_100
+    category: 1
+    requiredPoints: 100
+    sortOrder: 4
+    reward:
+      currencyType: 0
+      amount: 0
+    rewardData:
+      type: 1
+      currencyType: 0
+      powerUpType: 1
+      amount: 1

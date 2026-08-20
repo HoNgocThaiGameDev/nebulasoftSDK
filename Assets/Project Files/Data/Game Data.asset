@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfe15605739d3844adf6c12ca0e15dc, type: 3}
+  m_Name: Game Data
+  m_EditorClassIdentifier: 
+  levelDatabase: {fileID: 11400000, guid: 9d4c6771c9e7b67498560ded849ed199, type: 2}
+  revieCurrencyType: 0
+  revivePrices: 84030000b0040000dc050000
+  reviveExtraSeconds: 20
+  reviveIAPSeconds: 20
+  showAdsAfterLevel: 12
+  skipReturingToMenuUntilLevel: 15
+  defaultReward:
+    currencyType: 0
+    amount: 25
+  bossReward:
+    currencyType: 0
+    amount: 25
+  rewardMultiplier: 2
+  allowedColor: {r: 0.11784611, g: 0.4056604, b: 0.047837302, a: 1}
+  blockedColor: {r: 0.5566038, g: 0, b: 0, a: 1}

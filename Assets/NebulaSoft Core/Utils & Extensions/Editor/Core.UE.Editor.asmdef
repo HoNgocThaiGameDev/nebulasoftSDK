@@ -1,0 +1,19 @@
+{
+    "name": "Core.UE.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:dfd68d793e4e5c24da9f1a86e6e09fbe",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

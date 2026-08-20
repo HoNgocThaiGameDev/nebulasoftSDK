@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0,8461848">
+  <test-suite type="TestSuite" id="1000" name="PicturePuzzle Framework" fullname="PicturePuzzle Framework" runstate="Runnable" testcasecount="69" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.846185" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1081" name="Assembly-CSharp-Editor.dll" fullname="D:/PROJECT/PicturePuzzle_Framework/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="69" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.841113" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="2792" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1082" name="NebulaSoft" fullname="NebulaSoft" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.840289" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1083" name="Tests" fullname="NebulaSoft.Tests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.840013" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1077" name="FrameworkSceneSmokeTests" fullname="NebulaSoft.Tests.FrameworkSceneSmokeTests" classname="NebulaSoft.Tests.FrameworkSceneSmokeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.839153" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1078" name="BuildSettings_UsesTheFrameworkSceneFlow" fullname="NebulaSoft.Tests.FrameworkSceneSmokeTests.BuildSettings_UsesTheFrameworkSceneFlow" methodname="BuildSettings_UsesTheFrameworkSceneFlow" classname="NebulaSoft.Tests.FrameworkSceneSmokeTests" runstate="Runnable" seed="575297801" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:38Z" duration="0.010505" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1079" name="FrameworkScenes_HaveNoMissingScripts" fullname="NebulaSoft.Tests.FrameworkSceneSmokeTests.FrameworkScenes_HaveNoMissingScripts" methodname="FrameworkScenes_HaveNoMissingScripts" classname="NebulaSoft.Tests.FrameworkSceneSmokeTests" runstate="Runnable" seed="245897556" result="Passed" start-time="2026-08-19 08:26:38Z" end-time="2026-08-19 08:26:39Z" duration="0.819334" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="PopupContract_RemainsAvailable" fullname="NebulaSoft.Tests.FrameworkSceneSmokeTests.PopupContract_RemainsAvailable" methodname="PopupContract_RemainsAvailable" classname="NebulaSoft.Tests.FrameworkSceneSmokeTests" runstate="Runnable" seed="1498463255" result="Passed" start-time="2026-08-19 08:26:39Z" end-time="2026-08-19 08:26:39Z" duration="0.000369" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/Admin/AppData/LocalLow/NebulaSoftStudio/PicturePuzzle Framework\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
