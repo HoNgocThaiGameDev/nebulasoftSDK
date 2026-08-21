@@ -118,3 +118,7 @@ InitTestScene*.unity*
 
 # Burst debug symbol artifacts produced by local player builds.
 /*_BurstDebugInformation_DoNotShip/
+
+# Local Unity Test Runner and framework smoke-test reports.
+/editmode-test-results.xml
+/framework-smoke-*-results.xml

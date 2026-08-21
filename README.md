@@ -1,6 +1,6 @@
-# GameFrameWorkPackage — Picture Puzzle Template
+# GameFrameWorkPackage
 
-GameFrameWorkPackage is a Unity mobile-game template that combines a reusable service layer with a complete Picture Puzzle implementation. It is designed as a starting point for casual puzzle games: shared systems live in `NebulaSoft Core`, while game-specific rules, content, UI, and scenes live in `Project Files`.
+GameFrameWorkPackage is a reusable Unity mobile-game framework for casual, puzzle, idle, merge, tap/drag, and hyper-casual projects. Shared services live in `NebulaSoft Core`; each title adds its own gameplay rules, content, UI, and scenes under `Project Files` without changing the framework layer.
 
 This repository currently targets **Unity 6000.3.12f1** and package version **1.2.2**. Its enabled build scenes are:
 
@@ -8,7 +8,7 @@ This repository currently targets **Unity 6000.3.12f1** and package version **1.
 2. `Assets/Project Files/Game/Scenes/Menu.unity`
 3. `Assets/Project Files/Game/Scenes/Game.unity`
 
-> The bundled Picture Puzzle is an implementation example, not a claim that every casual-game mechanic is already included. Reuse the core services and add game-specific modules for a new title.
+> The bundled reference game demonstrates one integration of the framework. Reuse the core services and add a focused game module for each new title; it is not necessary to retain the reference game's rules or content.
 
 ## Quick start
 
@@ -29,7 +29,7 @@ Firebase-dependent code is conditionally compiled with `FIREBASE`; Facebook supp
 .
 ├── Assets/
 │   ├── NebulaSoft Core/        # Reusable framework services and editor tooling
-│   ├── Project Files/          # Picture Puzzle data, gameplay, UI, art, and scenes
+│   ├── Project Files/          # Reference-game and future-title data, gameplay, UI, art, and scenes
 │   │   ├── Data/               # ScriptableObject databases and game configuration
 │   │   └── Game/
 │   │       ├── Scenes/         # Init, Menu, Game, and Level Editor scenes
@@ -50,8 +50,8 @@ Firebase-dependent code is conditionally compiled with `FIREBASE`; Facebook supp
 
 | Area | Owns | Change here when |
 | --- | --- | --- |
-| `Assets/NebulaSoft Core` | Generic initialization, persistence, UI, economy, monetization, tweening, and utilities | Improving a reusable capability without coupling it to Picture Puzzle rules |
-| `Assets/Project Files` | Picture Puzzle content, game flow, level rules, presentation, and game-specific services | Adding or changing gameplay, content, UI, balancing, or progression for this game |
+| `Assets/NebulaSoft Core` | Generic initialization, persistence, UI, economy, monetization, tweening, and utilities | Improving a reusable capability without coupling it to a particular game's rules |
+| `Assets/Project Files` | Reference-game content plus title-specific game flow, rules, presentation, and services | Adding or changing gameplay, content, UI, balancing, or progression for a title |
 | SDK/vendor folders | Imported provider SDKs and third-party packages | Updating an integration according to the provider's migration guide; avoid direct feature edits |
 | `Packages` and `ProjectSettings` | Dependency versions, editor/build/platform configuration | Upgrading Unity/packages or configuring a new app target |
 
@@ -103,7 +103,7 @@ The core is organized under `Assets/NebulaSoft Core/Modules`. The table describe
 
 | Module | Responsibility | Primary entry/configuration | Boundary |
 | --- | --- | --- | --- |
-| **Initializer** | Persistent bootstrap, registered modules, loading tasks, consent and SDK behavior orchestration | `Initializer`, `GameLoading`, `Project Init Settings.asset`, `SDKInitializer` | Starts services; should not contain Picture Puzzle rules |
+| **Initializer** | Persistent bootstrap, registered modules, loading tasks, consent and SDK behavior orchestration | `Initializer`, `GameLoading`, `Project Init Settings.asset`, `SDKInitializer` | Starts services; should not contain title-specific rules |
 | **Save** | Local save-object creation, serialization, autosave, global and named saves | `SaveInitModule`, `SaveController`, `SavePresets` | Feature services own their save models; this module owns storage lifecycle |
 | **UI** | Page/popup navigation, overlay, safe area, button audio/haptics feedback | `UIController`, `UIPage`, popup interfaces | UI pages display state; game rules remain in controllers/services |
 | **Tween** | Time-based animations, callbacks, coroutines, reusable tween behaviors | `TweenInitModule`, `Tween`, `TweenCase` | Presentation/timing helper; it must not become gameplay state storage |
@@ -118,9 +118,9 @@ The core is organized under `Assets/NebulaSoft Core/Modules`. The table describe
 | **Skins** | Shared skin-selection extension point used by game data | `SkinController` and game-specific skin databases | The template's concrete level skins live under `Project Files/Data/Skins` |
 | **Inspector** | Custom inspector styles and editor presentation support | Core inspector assemblies/settings | Editor-only tooling; no runtime gameplay dependency |
 
-## Picture Puzzle modules
+## Reference-game modules
 
-Game-specific code is under `Assets/Project Files/Game/Scripts`. These modules depend on core services but keep Picture Puzzle behavior separate from reusable framework code.
+The current reference game is under `Assets/Project Files/Game/Scripts`. Its modules demonstrate how a title composes core services; a new game can replace or extend this layer without changing `NebulaSoft Core`.
 
 | Group | Main types and assets | How it works |
 | --- | --- | --- |
