@@ -43,6 +43,7 @@ Firebase-dependent code is conditionally compiled with `FIREBASE`; Facebook supp
 │   └── Tests/Editor/           # EditMode regression tests
 ├── Packages/                   # Unity Package Manager manifest and lock file
 ├── ProjectSettings/            # Unity project and build settings
+├── docs/images/                # README diagrams and screenshots
 └── tools/design/               # Local Figma bridge/export utilities
 ```
 
@@ -77,6 +78,45 @@ flowchart LR
 ```
 
 `Project Init Settings.asset` contains the registered `InitModule` instances. Each module derives from `InitModule` and creates or initializes one service. Modules should be independent of a particular level or scene whenever possible.
+
+### Module registration and service initialization
+
+![Project Init Settings Inspector](docs/images/project-init-settings.png)
+
+The Inspector above is the project's service registry. It serializes an ordered `InitModule[]` inside `Project Init Settings.asset`; it is **not** a dependency-injection container. A module owns its serialized configuration, and its `CreateComponent()` method initializes the corresponding static manager/service or persistent runtime component.
+
+```mermaid
+flowchart LR
+    A[InitModule class] -->|RegisterModule attribute| B[Project Init Settings custom Inspector]
+    B -->|Serialized as ordered subasset| C[Project Init Settings.asset]
+    D[GameLoading] --> E[Initializer.InitModules]
+    E --> F[ProjectInitSettings.Init]
+    F -->|For each module in list order| G[InitModule.CreateComponent]
+    G --> H[Static service Init or persistent component]
+    H --> I[Scene controllers and UI use the service]
+```
+
+At editor time, `[RegisterModule("Name", core, order)]` makes an `InitModule` discoverable by the custom `Project Init Settings` inspector. Modules marked `core: true` are required when a settings asset is created; their `order` determines creation priority. Non-core modules are optional entries added from the Inspector's **Add Module** menu, with one instance of each module type per settings asset.
+
+At runtime, `GameLoading` calls `Initializer.Init()`, checks connectivity, then calls `Initializer.InitModules()`. `ProjectInitSettings.Init()` walks the serialized list in its displayed order and invokes `CreateComponent()` on every non-null module. After that, static modules and global music are initialized; `SDKInitializer` then initializes SDK behaviors and queued loading tasks before the next scene loads.
+
+The modules shown in the screenshot currently register services as follows:
+
+| Inspector module | Serialized configuration | Runtime registration/effect |
+| --- | --- | --- |
+| **Save Controller** | Autosave delay, clear-on-start option, WebGL key prefix | Calls `SaveController.Init(...)`; this must precede services that load player state |
+| **Tween** | Custom easing functions and update-pool capacities | Adds the persistent `Tween` component to `Initializer.GameObject`, initializes it, then registers easing functions |
+| **Audio Controller** | Audio clip library, pool size, and 3D audio defaults | Applies 3D settings and calls `AudioController.Init(...)` |
+| **Currencies** | `CurrencyDatabase` | Calls `CurrencyController.Init(database)` for balances, currency definitions, and reward integration |
+| **Haptic** | Optional verbose logging | Enables logging when requested, then calls `Haptic.Init()` to select the platform wrapper |
+| **Dev Panel** | `DevPanelSettings` | Validates settings and links them through `DevPanelEnabler.LinkSettings(...)` |
+| **Game Settings** | `GameData` | Calls `GameData.Init()`, exposes global defaults, and applies relevant remote-config overrides |
+| **Lives System** | `LivesData` | Validates data and calls `LivesSystem.Init(data)`; it reads persisted life state from the save service |
+| **Screen Settings** | Target frame rate and sleep-timeout options | Applies `Application.targetFrameRate` and `Screen.sleepTimeout` |
+| **Quest** | `QuestDatabase` | Calls `QuestService.Init(database)` |
+| **Daily Reward** | `DailyRewardDatabase` | Calls `DailyRewardService.Init(database)` after the save service is ready |
+
+To add a framework or game service, create a `ScriptableObject` derived from `InitModule`, add `[RegisterModule("Feature Name", core: false)]`, serialize its settings, and call the service's initialization method from `CreateComponent()`. Add the module in `Project Init Settings.asset`, place it after every dependency it requires, and add an EditMode test for initialization and save/remote-config edge cases. Use `core: true` only when every project created from the framework requires the module.
 
 ### Menu-to-game runtime flow
 
