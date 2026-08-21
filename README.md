@@ -1,6 +1,6 @@
-# NebulaSoft SDK — Picture Puzzle Template
+# GameFrameWorkPackage — Picture Puzzle Template
 
-NebulaSoft SDK is a Unity mobile-game template that combines a reusable service layer with a complete Picture Puzzle implementation. It is designed as a starting point for casual puzzle games: shared systems live in `NebulaSoft Core`, while game-specific rules, content, UI, and scenes live in `Project Files`.
+GameFrameWorkPackage is a Unity mobile-game template that combines a reusable service layer with a complete Picture Puzzle implementation. It is designed as a starting point for casual puzzle games: shared systems live in `NebulaSoft Core`, while game-specific rules, content, UI, and scenes live in `Project Files`.
 
 This repository currently targets **Unity 6000.3.12f1** and package version **1.2.2**. Its enabled build scenes are:
 
@@ -196,4 +196,4 @@ Before publishing changes, verify:
 
 ## License
 
-This repository does not currently contain an explicit root license file. The source template from which it was prepared carried a commercial-use restriction: compiled games could be distributed, but the template source code and assets could not be redistributed or resold. Do not assume open-source rights; contact the repository owner to confirm the terms that apply to your intended use.
+Project-owned source files in this repository are licensed under the [Apache License 2.0](LICENSE). Third-party SDKs, plugins, fonts, and assets remain subject to the license notices included with those dependencies; the Apache License does not replace their terms.
